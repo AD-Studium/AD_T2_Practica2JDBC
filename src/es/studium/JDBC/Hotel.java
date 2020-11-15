@@ -14,9 +14,10 @@ public class Hotel {
  
 		ClientePersistencia.updateCliente(id, "apellidos", "Martínez Navas");
 		System.out.println(ClientePersistencia.readCliente(id, "apellidos"));
- 
+		
+		System.out.println("Borrando: "+ClientePersistencia.readCliente(id, "apellidos"));
 		ClientePersistencia.deleteCliente(id);
-		System.out.println(ClientePersistencia.readCliente(id, "apellidos"));
+		
  
 	}
 }

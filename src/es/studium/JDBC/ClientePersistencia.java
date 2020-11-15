@@ -16,8 +16,8 @@ import java.sql.Statement;
 public class ClientePersistencia {
 	static String driver = "com.mysql.jdbc.Driver";
 	static String url ="jdbc:mysql://localhost:3306/hotel?useJDBCCompliantTimezoneShift=true&serverTimezone=UTC&useSSL=false";
-	static String login = "root";
-	static String password = "Studium2018;";
+	static String login = "ClaseStudium";
+	static String password = "Studium2020;";
 	
 	public static int createCliente(String nombre, String apellidos, String email, String dni, String clave) {
 		/* Devuelve el valor de la columna "campo" del cliente identificado por "idCliente" */
@@ -33,7 +33,7 @@ public class ClientePersistencia {
 			Statement stm = connect.createStatement();
 			//Ejecutamos la sentencia
 			stm.executeUpdate(crearCliente);
-			//Guardamos el resultado de la sentencia en un ResultSet
+			//Guardamos el resultado de la sentencia en un ResultSet y ejecutamos la sentencia
 			ResultSet rs = stm.executeQuery(ultimoIdCliente);
 			//Recorremos el ResultSet
 			rs.next();
