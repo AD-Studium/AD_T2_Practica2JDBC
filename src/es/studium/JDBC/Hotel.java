@@ -16,7 +16,7 @@ public class Hotel {
 		System.out.println(ClientePersistencia.readCliente(id, "apellidos"));
 		
 		System.out.println("Borrando: "+ClientePersistencia.readCliente(id, "apellidos"));
-		ClientePersistencia.deleteCliente(id);
+		//ClientePersistencia.deleteCliente(id);
 		
  
 	}
